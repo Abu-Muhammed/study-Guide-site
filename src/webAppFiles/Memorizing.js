@@ -1,24 +1,21 @@
 import React from "react";
-import { Card, CardContent, Typography, Grid, Link, Box } from "@mui/material";
+import { Card, CardContent, Typography, Grid, Link } from "@mui/material";
+import MessageNote from "./MessageNote";
+import Container from "./Container";
+import GreenBar from "./GreenBar";
 
-const MemorizationPage = () => {
+const Memorizing = () => {
   return (
-    <Box
-      sx={{
-        padding: "2.5rem",
-        margin: "1.5rem",
-        backgroundColor: "#f5f5f5",
-        borderRadius: "8px",
-      }}
-    >
-      <Typography variant="h5" align="center" gutterBottom>
-        ■ Memorization ■
-      </Typography>
+    <Container>
+      <GreenBar>
+        {" "}
+        <Typography variant="h5" align="center" gutterBottom>
+          ■ Memorizing ■
+        </Typography>{" "}
+      </GreenBar>
       <Card sx={{ marginBottom: "2rem" }}>
         <CardContent>
-          <Typography variant="h6">
-            Shaikh Ibn ‘Uthaimeen (may Allah have mercy upon him) said:
-          </Typography>
+          <Typography variant="h6">Shaikh Ibn Uthaimeen said:</Typography>
           <Typography
             variant="h6"
             component="blockquote"
@@ -33,7 +30,7 @@ const MemorizationPage = () => {
         </CardContent>
       </Card>
       <Typography variant="h6" gutterBottom>
-        1. Qurān : New portion + Revising Old portion
+        1. Qurān : New Portion + Revising Old Portion
       </Typography>
       <Typography variant="h6" gutterBottom>
         2. Hisnul Muslim:
@@ -67,8 +64,18 @@ const MemorizationPage = () => {
           </Link>
         </Grid>
       </Grid>
-    </Box>
+      <MessageNote>
+        Note 1: The Secret behind Strong Retention is More Repetition, The More
+        You repeat, Strong the Content Stays with you for a Long Time.
+      </MessageNote>
+      <MessageNote>
+        Note 2: Here Hadeeth Books and other Important Mutoon [Texts] are not
+        included for memorization, Since that would only benefit if a person
+        knows Arabic, So A Student Of Knowledge can focus on Memorizing those
+        things once he has obtained a sound Degree in Arabic.
+      </MessageNote>
+    </Container>
   );
 };
 
-export default MemorizationPage;
+export default Memorizing;

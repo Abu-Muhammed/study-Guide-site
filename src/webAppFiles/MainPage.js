@@ -1,22 +1,26 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
-import Wrapper from "./Wrapper";
-import EasyKnowledge from "./EasyKnowledge";
-import TalibulIlmActivities from "./TalibulIlmActivities";
+import ScholarlyQuote from "./ScholarlyQuote";
+import WaysToKnowledge from "./WaysToKnowledge";
+import GreenBar from "./GreenBar";
+import Narrations from "./Narrations";
+import { Typography } from "@mui/material";
 
 const MainPage = () => {
   return (
     <>
-      <Box sx={{ p: "0.5rem", bgcolor: "#57C12C", color: "white" }}>
-        A Guide For The Knowledge Seeker
-      </Box>
-      <EasyKnowledge />
-      <TalibulIlmActivities />
-      {/* <Wrapper></Wrapper> */}
-      <Box sx={{ p: "0.5rem", bgcolor: "#57C12C", color: "white" }}>
+      <GreenBar>
+        {" "}
+        <Typography variant="h5" align="center" gutterBottom>
+          ■ A Guide For The Knowledge Seeker ■
+        </Typography>{" "}
+      </GreenBar>
+      <ScholarlyQuote />
+      <WaysToKnowledge />
+      <Narrations />
+      <GreenBar>
         Messenger of Allah (ﷺ) said: "Seeking knowledge is a duty upon every
         Muslim"
-      </Box>
+      </GreenBar>
     </>
   );
 };
