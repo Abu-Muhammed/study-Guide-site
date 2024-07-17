@@ -1047,30 +1047,31 @@ const quotes = [
 
 const SalafQuotes = () => {
   return (
-    <Box sx={{ padding: "2rem" }}>
+    <>
       <GreenBar>
-        {" "}
         <Typography variant="h5" align="center" gutterBottom>
           ■ Salaf In Pursuit Of Knowledge ■
-        </Typography>{" "}
+        </Typography>
       </GreenBar>
-      {quotes.map((quote, index) => (
-        <Box key={index} sx={{ my: "2rem" }}>
-          <Typography variant="body1" sx={{ marginBottom: "1rem" }}>
-            ● {quote.narrator} :
-          </Typography>
-          <Typography
-            variant="body2"
-            sx={{ marginBottom: "0.5rem", fontStyle: "italic" }}
-          >
-            {quote.text}
-          </Typography>
-          <Typography variant="caption" sx={{ color: "gray" }}>
-            {quote.reference}
-          </Typography>
-        </Box>
-      ))}
-    </Box>
+      <Box sx={{ padding: "2rem" }}>
+        {quotes.map((quote, index) => (
+          <Box key={index} sx={{ my: "2rem" }}>
+            <Typography variant="body1" sx={{ marginBottom: "1rem" }}>
+              ● {quote.narrator} :
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ marginBottom: "0.5rem", fontStyle: "italic" }}
+            >
+              {quote.text}
+            </Typography>
+            <Typography variant="caption" sx={{ color: "gray" }}>
+              {quote.reference}
+            </Typography>
+          </Box>
+        ))}
+      </Box>
+    </>
   );
 };
 

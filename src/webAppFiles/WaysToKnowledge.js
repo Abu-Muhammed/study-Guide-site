@@ -29,7 +29,7 @@ const WaysToKnowledge = () => {
       }}
     >
       <Typography variant="h5" align="center" paddingBottom="2rem">
-        3 Parallel Things For A Diligent Student{" "}
+        3 Paths Of Knowledge
       </Typography>
       <Grid container spacing={4} justifyContent="center">
         {threePaths.map((activity, index) => (

@@ -1,4 +1,4 @@
-import { Card, CardContent, Grid } from "@mui/material";
+import { Card, CardContent, Grid, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -15,13 +15,23 @@ const Narrations = () => {
         mt: "1rem",
       }}
     >
-      <Card>
-        <CardContent>
-          <Link to={"/narrationsAboutSalaf"} style={{ textDecoration: "none" }}>
-            Narrations About Salaf
-          </Link>
-        </CardContent>
-      </Card>
+      <Link to={"/narrationsAboutSalaf"} style={{ textDecoration: "none" }}>
+        <Card sx={{ maxWidth: 345, margin: "auto" }}>
+          <CardContent
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              textAlign: "center",
+              paddingBottom: "15px !important",
+            }}
+          >
+            <Typography variant="h6" component="div">
+              Salaf In Pursuit Of Knowledge
+            </Typography>
+          </CardContent>
+        </Card>
+      </Link>
     </Grid>
   );
 };
