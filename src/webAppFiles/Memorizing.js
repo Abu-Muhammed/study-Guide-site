@@ -31,6 +31,29 @@ const Memorizing = () => {
         <Card sx={{ marginBottom: "2rem" }}>
           <CardContent>
             <Typography variant="h6" gutterBottom>
+              Shaikh Salih Sindi said:
+            </Typography>
+            <Typography gutterBottom>
+              “And no doubt, that which should be memorized firstly is the Book
+              of Allah. And a student of knowledge who does not memorize the
+              Book of Allaah is deficient in his search (for knowledge), So it
+              is a must that - if you are a person of firm determination and
+              resolve and you have the ability over memorization - that you
+              begin with memorizing the Book of Allaah.
+            </Typography>
+            <Typography gutterBottom>
+              Then (after that) you memorise that which is possible (for you)
+              from the sunnah of the prophet and you proceed in steps (in the
+              path of memorization)”.
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              [How to record the knowledge and preserve the benefits - pg 03]
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card sx={{ marginBottom: "2rem" }}>
+          <CardContent>
+            <Typography variant="h6" gutterBottom>
               1. Al-Qurān
             </Typography>
             <Typography variant="h6" gutterBottom>
@@ -100,6 +123,12 @@ const Memorizing = () => {
             <LinkUnderText
               text={"▪︎ Bulugh al-Maram - Iman Ibn Hajar"}
               link={"https://t.me/TheEnglishDiwan/4861"}
+            />
+            <LinkUnderText
+              text={"▪︎ Jami'ul Mutoon - Collection of Mutoon"}
+              link={
+                "https://drive.google.com/drive/folders/1hWc0pgkbuY_F9g53ZQG4YuiouegFB6Yb?usp=sharing"
+              }
             />
           </CardContent>
         </Card>

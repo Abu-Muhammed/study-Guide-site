@@ -1,7 +1,5 @@
 import React from "react";
-import Container from "./Container";
-import { Box, Link, Typography } from "@mui/material";
-import GreenBar from "./GreenBar";
+import Leveler from "./Leveler";
 
 const Level02 = () => {
   const levelContent = {
@@ -13,15 +11,15 @@ const Level02 = () => {
           books: [
             {
               name: "The Etiquette of Seeking Knowledge by Shaykh Bakr Aboo Zayd",
-              link: "https://dummy.link/etiquette-seeking-knowledge",
+              link: "https://t.me/TheEnglishDiwan/7601",
             },
             {
               name: "Excellence of Knowledge, The Virtue of the Salaf over the Khalaf by Ibn Rajab",
-              link: "https://dummy.link/excellence-knowledge",
+              link: "https://t.me/TheEnglishDiwan/8995The",
             },
             {
               name: "Daily Routine of a Student of knowledge",
-              link: "https://dummy.link/daily-routine-student",
+              link: "https://t.me/DarPDFs/1882",
             },
           ],
         },
@@ -29,16 +27,56 @@ const Level02 = () => {
           title: "Aqeeda",
           books: [
             {
+              name: "Explanation of 'La Ilaha Illallah' [tamil]",
+              link: "https://t.me/salafimaktabahmpm/30",
+            },
+            {
+              name: "Conditions of Kalima [tamil]",
+              link: "https://t.me/salafimaktabahmpm/35",
+            },
+            {
+              name: "Explanation of 'Muhammadur Rasoolullah' [tamil]",
+              link: "https://t.me/salafimaktabahmpm/41",
+            },
+            {
+              name: "Explanation of The Four Principles [tamil]",
+              link: "https://t.me/islamiyanoolagam/785",
+            },
+            {
+              name: "Benefits of Knowing Allah Part-1 [tamil]",
+              link: "https://t.me/salafimaktabahmpm/103",
+            },
+            {
+              name: "Benefits of Knowing Allah Part-2 [tamil]",
+              link: "https://t.me/salafimaktabahmpm/122",
+            },
+            {
+              name: "Benefits of Knowing Allah Part-3 [tamil]",
+              link: "https://t.me/salafimaktabahmpm/149",
+            },
+            {
+              name: "Manhaj of Ahlus Sunnah in Names and Attributes [tamil]",
+              link: "https://t.me/salafimaktabahmpm/81",
+            },
+            {
+              name: "11 General Principles of Ahlus Sunnah in Names and Attributes Part-1 [tamil]",
+              link: "https://t.me/salafimaktabahmpm/294",
+            },
+            {
+              name: "11 General Principles of Ahlus Sunnah in Names and Attributes Part-2 [tamil]",
+              link: "https://t.me/salafimaktabahmpm/310",
+            },
+            {
               name: "The Creed of al-Wasitiyyah by Ibn Taymiyyah",
-              link: "https://dummy.link/creed-al-wasitiyyah",
+              link: "https://t.me/TheEnglishDiwan/10706",
             },
             {
               name: "Aspects of the Days of Ignorance by Muhammad ibn Abdul-Wahhaab",
-              link: "https://dummy.link/days-of-ignorance",
+              link: "https://t.me/TheEnglishDiwan/7585",
             },
             {
               name: "Divine Decree & Pre Ordainment - Shaykh Salih Al Uthaymīn",
-              link: "https://dummy.link/divine-decree",
+              link: "https://t.me/DarPDFs/2144",
             },
           ],
         },
@@ -47,19 +85,19 @@ const Level02 = () => {
           books: [
             {
               name: "The Abridgment of the Prophet’s Prayer Described by Shaykh al-Albani",
-              link: "https://dummy.link/prophets-prayer",
+              link: "https://t.me/TheEnglishDiwan/9186",
             },
             {
               name: "Inner Dimension of the Prayer by Ibn al-Qayyim",
-              link: "https://dummy.link/inner-dimension-prayer",
+              link: "https://t.me/TheEnglishDiwan/8120",
             },
             {
               name: "The Magnifying Glass on Clarifying Common Errors in Salah by Shaykh Saalih Aali Shaykh",
-              link: "https://dummy.link/errors-in-salah",
+              link: "https://t.me/TheEnglishDiwan/7280",
             },
             {
               name: "The Fiqh of Fasting the Month of Ramadan Work book",
-              link: "https://dummy.link/fiqh-of-fasting",
+              link: "https://t.me/TheEnglishDiwan/3573",
             },
           ],
         },
@@ -68,7 +106,7 @@ const Level02 = () => {
           books: [
             {
               name: "How are We Obligated to Interpret the Noble Qur’aan? by Shaykh al-Albani",
-              link: "https://dummy.link/interpret-quran",
+              link: "https://t.me/TheEnglishDiwan/4949",
             },
           ],
         },
@@ -77,15 +115,15 @@ const Level02 = () => {
           books: [
             {
               name: "The Foundations of the Salafi Da’wah by Shaykh Abdus-Salam bin Burjis",
-              link: "https://dummy.link/salafi-dawah",
+              link: "https://t.me/TheEnglishDiwan/2822",
             },
             {
               name: "Reality of Salafiyyah - Salih Al Fawzan",
-              link: "https://dummy.link/reality-of-salafiyyah",
+              link: "https://t.me/DarPDFs/2508",
             },
             {
               name: "Commentary on Usool as Sunnah of Ahmed",
-              link: "https://dummy.link/usool-as-sunnah",
+              link: "https://t.me/DarPDFs/5315",
             },
           ],
         },
@@ -94,7 +132,7 @@ const Level02 = () => {
           books: [
             {
               name: "The Manners & Attributes of the Prophet Muhammad ﷺ by Abdul-Ghani al-Maqdisi",
-              link: "https://dummy.link/manners-attributes-prophet",
+              link: "https://t.me/TheEnglishDiwan/11711",
             },
           ],
         },
@@ -103,7 +141,7 @@ const Level02 = () => {
           books: [
             {
               name: "Heartfelt Advice to a Friend by Ibn al-Qayyim",
-              link: "https://dummy.link/advice-to-a-friend",
+              link: "https://t.me/TheEnglishDiwan/4544",
             },
           ],
         },
@@ -112,7 +150,7 @@ const Level02 = () => {
           books: [
             {
               name: "Diseases of the Hearts & Their Cures by Ibn Taymiyyah",
-              link: "https://dummy.link/diseases-of-the-heart",
+              link: "https://t.me/TheEnglishDiwan/8315",
             },
           ],
         },
@@ -121,48 +159,14 @@ const Level02 = () => {
           books: [
             {
               name: "Explanation to the Beautiful and Perfect Names of Allāh by as-Sa’di",
-              link: "https://dummy.link/beautiful-names",
+              link: "https://t.me/TheEnglishDiwan/4793",
             },
           ],
         },
       ],
     },
   };
-
-  return (
-    <>
-      <GreenBar>
-        <Typography variant="h6" sx={{ marginBottom: "0.5rem" }}>
-          {levelContent.level2.title}
-        </Typography>
-      </GreenBar>
-      <Container>
-        {levelContent.level2.subjects.map((subject, index) => (
-          <Box key={index}>
-            <Typography variant="h6" sx={{ marginBottom: "0.5rem" }}>
-              {subject.title}
-            </Typography>
-            {subject.books.map((book, bookIndex) => (
-              <Typography
-                key={bookIndex}
-                variant="body1"
-                sx={{ marginBottom: "0.3rem" }}
-              >
-                <Link
-                  href={book.link}
-                  style={{ textDecoration: "none" }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ▪ {book.name}
-                </Link>
-              </Typography>
-            ))}
-          </Box>
-        ))}
-      </Container>
-    </>
-  );
+  return <Leveler level={levelContent.level2} />;
 };
 
 export default Level02;

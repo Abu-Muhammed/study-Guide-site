@@ -1,7 +1,5 @@
 import React from "react";
-import Container from "./Container";
-import { Box, Link, Typography } from "@mui/material";
-import GreenBar from "./GreenBar";
+import Leveler from "./Leveler";
 
 const Level05 = () => {
   const levelContent = {
@@ -13,11 +11,11 @@ const Level05 = () => {
           books: [
             {
               name: "Al-Wala’ wa’l-Bara’ by Muhammad Saeed al-Qahtani, 3 volumes",
-              link: "https://dummy.link/al-wala-wal-bara",
+              link: "https://t.me/TheEnglishDiwan/9315",
             },
             {
               name: "Commentary on Shaykh al-Islam Ibn Taymiyyah’s Al-‘Aqidah al-Wasitiyyah by Shaykh ‘Uthaymīn, 2 volumes",
-              link: "https://dummy.link/commentary-aqidah-wasitiyyah",
+              link: "https://t.me/TheEnglishDiwan/7817",
             },
           ],
         },
@@ -25,12 +23,8 @@ const Level05 = () => {
           title: "Fiqh",
           books: [
             {
-              name: "Summary of Fiqh - Salih Al Fawzan Vol 1",
-              link: "https://dummy.link/summary-fiqh-vol1",
-            },
-            {
-              name: "Summary of Fiqh - Salih Al Fawzan Vol 2",
-              link: "https://dummy.link/summary-fiqh-vol2",
+              name: "Summary of Fiqh - Salih Al Fawzan, 2 Volumes",
+              link: "https://t.me/DarPDFs/2090",
             },
           ],
         },
@@ -38,16 +32,12 @@ const Level05 = () => {
           title: "Manhaj",
           books: [
             {
-              name: "Explanation of Sharah as Sunnah - Salih Al Fawzan Vol 1",
-              link: "https://dummy.link/explanation-sharah-sunnah-vol1",
-            },
-            {
-              name: "Explanation of Sharah as Sunnah - Salih Al Fawzan Vol 2",
-              link: "https://dummy.link/explanation-sharah-sunnah-vol2",
+              name: "Explanation of Sharah as Sunnah - Salih Al Fawzan, 2 Volumes",
+              link: "https://t.me/DarPDFs/1690",
             },
             {
               name: "Encyclopedia on Bid’ah & Its Principles by Shaykh al-Albani",
-              link: "https://dummy.link/encyclopedia-bidah-principles",
+              link: "https://t.me/TheEnglishDiwan/7258",
             },
           ],
         },
@@ -56,7 +46,7 @@ const Level05 = () => {
           books: [
             {
               name: "Ibn al-Jawzee’s The Devil’s Deception",
-              link: "https://dummy.link/devils-deception",
+              link: "https://t.me/TheEnglishDiwan/6568",
             },
           ],
         },
@@ -65,7 +55,7 @@ const Level05 = () => {
           books: [
             {
               name: "Al-Fawaid - A Collection of Wise Sayings by Ibn al-Qayyim",
-              link: "https://dummy.link/al-fawaid-wise-sayings",
+              link: "https://t.me/TheEnglishDiwan/8687",
             },
           ],
         },
@@ -74,7 +64,7 @@ const Level05 = () => {
           books: [
             {
               name: "Men and the Universe, Reflections of Ibn al-Qayyim",
-              link: "https://dummy.link/men-universe-reflections",
+              link: "https://t.me/TheEnglishDiwan/8711",
             },
           ],
         },
@@ -83,7 +73,7 @@ const Level05 = () => {
           books: [
             {
               name: "The Right Way - A Summarised Translation of Iqtida as-Siratul-Mustaqeem by Ibn Taymiyyah",
-              link: "https://dummy.link/right-way-iqtida-siratul-mustaqeem",
+              link: "https://t.me/TheEnglishDiwan/6047",
             },
           ],
         },
@@ -92,11 +82,11 @@ const Level05 = () => {
           books: [
             {
               name: "Concise Biography of the Prophet Muhammad of Muhammad ibn ‘Abdul-Wahhab by Shaykh Salih Al-Sheikh",
-              link: "https://dummy.link/concise-biography-prophet-muhammad",
+              link: "https://t.me/TheEnglishDiwan/6432",
             },
             {
               name: "The Daily Practices of the Prophet ﷺ by Abdullah al-Furaih",
-              link: "https://dummy.link/daily-practices-prophet",
+              link: "https://t.me/TheEnglishDiwan/9362",
             },
           ],
         },
@@ -104,40 +94,7 @@ const Level05 = () => {
     },
   };
 
-  return (
-    <>
-      <GreenBar>
-        <Typography variant="h6" sx={{ marginBottom: "0.5rem" }}>
-          {levelContent.level5.title}
-        </Typography>
-      </GreenBar>
-      <Container>
-        {levelContent.level5.subjects.map((subject, index) => (
-          <Box key={index}>
-            <Typography variant="h6" sx={{ marginBottom: "0.5rem" }}>
-              {subject.title}
-            </Typography>
-            {subject.books.map((book, bookIndex) => (
-              <Typography
-                key={bookIndex}
-                variant="body1"
-                sx={{ marginBottom: "0.3rem" }}
-              >
-                <Link
-                  href={book.link}
-                  style={{ textDecoration: "none" }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ▪ {book.name}
-                </Link>
-              </Typography>
-            ))}
-          </Box>
-        ))}
-      </Container>
-    </>
-  );
+  return <Leveler level={levelContent.level5} />;
 };
 
 export default Level05;

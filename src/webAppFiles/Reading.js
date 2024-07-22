@@ -44,7 +44,9 @@ const Reading = () => {
           <CardContent
             sx={{ display: "flex", flexDirection: "column", rowGap: "1rem" }}
           >
-            <Typography>Daily Reads : Tarjama & One or Two Hadith</Typography>
+            <Typography variant="h6">
+              Daily Reads : Tarjama & One or Two Hadeeth
+            </Typography>
             <LinkUnderText
               text={"▪︎ Meadow Of The Beginners - Shaykh Ibn Hizam"}
               link={"https://t.me/IbnhezamEn/442"}
