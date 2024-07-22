@@ -11,7 +11,7 @@ const MainPage = () => {
       <GreenBar>
         {" "}
         <Typography variant="h5" align="center" gutterBottom>
-          ■ A Guide For The Knowledge Seeker ■
+          ■ Talabul Ilm ■
         </Typography>{" "}
       </GreenBar>
       <ScholarlyQuote />
