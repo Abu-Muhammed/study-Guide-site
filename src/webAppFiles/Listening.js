@@ -10,7 +10,7 @@ const Listening = () => {
     <>
       <GreenBar>
         <Typography variant="h5" align="center" gutterBottom>
-          ■ Listening ■
+          Listening
         </Typography>
       </GreenBar>
       <Container>

@@ -10,9 +10,9 @@ const Narrations = () => {
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
-        py: "1rem",
+        py: "1.5rem",
         backgroundColor: "#f5f5f5",
-        mt: "1rem",
+        mt: "1.5rem",
       }}
     >
       <Link to={"/narrationsAboutSalaf"} style={{ textDecoration: "none" }}>
@@ -24,6 +24,7 @@ const Narrations = () => {
               alignItems: "center",
               textAlign: "center",
               paddingBottom: "15px !important",
+              "&:hover": { bgcolor: "#D6F9D1" },
             }}
           >
             <Typography variant="h6" component="div">

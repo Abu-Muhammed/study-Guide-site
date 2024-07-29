@@ -43,6 +43,7 @@ const WaysToKnowledge = () => {
                     alignItems: "center",
                     textAlign: "center",
                     paddingBottom: "15px !important",
+                    "&:hover": { bgcolor: "#D6F9D1" },
                   }}
                 >
                   <Typography variant="h6" component="div">

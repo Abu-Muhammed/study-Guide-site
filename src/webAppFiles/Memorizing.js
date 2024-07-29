@@ -10,7 +10,7 @@ const Memorizing = () => {
     <>
       <GreenBar>
         <Typography variant="h5" align="center" gutterBottom>
-          ■ Memorizing ■
+          Memorizing
         </Typography>
       </GreenBar>
       <Container>

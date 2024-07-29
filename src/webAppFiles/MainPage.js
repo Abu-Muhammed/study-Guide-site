@@ -3,7 +3,7 @@ import ScholarlyQuote from "./ScholarlyQuote";
 import WaysToKnowledge from "./WaysToKnowledge";
 import GreenBar from "./GreenBar";
 import Narrations from "./Narrations";
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 const MainPage = () => {
   return (
@@ -11,16 +11,13 @@ const MainPage = () => {
       <GreenBar>
         {" "}
         <Typography variant="h5" align="center" gutterBottom>
-          ■ Talabul Ilm ■
+          طلب العلم
         </Typography>{" "}
       </GreenBar>
       <ScholarlyQuote />
       <WaysToKnowledge />
       <Narrations />
-      <GreenBar>
-        Messenger of Allah (ﷺ) said: "Seeking knowledge is a duty upon every
-        Muslim"
-      </GreenBar>
+      <Box sx={{ m: "1rem" }}></Box>
     </>
   );
 };

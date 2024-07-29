@@ -403,7 +403,7 @@ const SalafQuotes = () => {
     <>
       <GreenBar>
         <Typography variant="h5" align="center" gutterBottom>
-          ■ Salaf In Pursuit Of Knowledge ■
+          Narrations
         </Typography>
       </GreenBar>
       <Box sx={{ padding: "2rem" }}>

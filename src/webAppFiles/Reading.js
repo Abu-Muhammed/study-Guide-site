@@ -36,7 +36,7 @@ const Reading = () => {
     <>
       <GreenBar>
         <Typography variant="h5" align="center" gutterBottom>
-          ■ Reading ■
+          Reading
         </Typography>
       </GreenBar>
       <Container>
@@ -85,6 +85,7 @@ const Reading = () => {
                           alignItems: "center",
                           textAlign: "center",
                           paddingBottom: "15px !important",
+                          "&:hover": { bgcolor: "#D6F9D1" },
                         }}
                       >
                         <Typography variant="h6">{reading.level}</Typography>
