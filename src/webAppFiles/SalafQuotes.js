@@ -406,7 +406,7 @@ const SalafQuotes = () => {
           Narrations
         </Typography>
       </GreenBarWithProgress>
-      <Box sx={{ p: "1rem", mt: "1rem" }}>
+      <Box sx={{ px: "2rem", py: "1rem", mt: "1rem" }}>
         {quotes.map((quote, index) => (
           <Box key={index} sx={{ my: "2rem" }}>
             <Typography variant="body1" sx={{ marginBottom: "1rem" }}>
