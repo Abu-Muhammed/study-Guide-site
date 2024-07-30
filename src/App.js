@@ -11,23 +11,26 @@ import Level03 from "./webAppFiles/Level03";
 import Level04 from "./webAppFiles/Level04";
 import Level05 from "./webAppFiles/Level05";
 import Level06 from "./webAppFiles/Level06";
+import ScrollToTop from "./webAppFiles/ScrollToTop";
 
 const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/memorizing" element={<Memorizing />} />
-        <Route path="/listening" element={<Listening />} />
-        <Route path="/reading" element={<Reading />} />
-        <Route path="/reading/level01" element={<Level01 />} />
-        <Route path="/reading/level02" element={<Level02 />} />
-        <Route path="/reading/level03" element={<Level03 />} />
-        <Route path="/reading/level04" element={<Level04 />} />
-        <Route path="/reading/level05" element={<Level05 />} />
-        <Route path="/reading/level06" element={<Level06 />} />
-        <Route path="/narrationsAboutSalaf" element={<SalafQuotes />} />
-      </Routes>
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/memorizing" element={<Memorizing />} />
+          <Route path="/listening" element={<Listening />} />
+          <Route path="/reading" element={<Reading />} />
+          <Route path="/reading/level01" element={<Level01 />} />
+          <Route path="/reading/level02" element={<Level02 />} />
+          <Route path="/reading/level03" element={<Level03 />} />
+          <Route path="/reading/level04" element={<Level04 />} />
+          <Route path="/reading/level05" element={<Level05 />} />
+          <Route path="/reading/level06" element={<Level06 />} />
+          <Route path="/narrationsAboutSalaf" element={<SalafQuotes />} />
+        </Routes>
+      </ScrollToTop>
     </Router>
   );
 };
