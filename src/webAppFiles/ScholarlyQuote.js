@@ -3,7 +3,9 @@ import { Card, CardContent, Typography } from "@mui/material";
 
 const ScholarlyQuote = () => {
   return (
-    <Card sx={{ maxWidth: 700, margin: "1rem auto", padding: "1rem" }}>
+    <Card
+      sx={{ maxWidth: 700, margin: "2rem auto", mt: "5rem", padding: "1rem" }}
+    >
       <CardContent>
         <Typography variant="h6" gutterBottom>
           Shaykh Abdus Salam Ash-Shuwayir says:

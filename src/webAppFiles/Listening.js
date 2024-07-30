@@ -14,7 +14,7 @@ const Listening = () => {
         </Typography>
       </GreenBar>
       <Container>
-        <Card>
+        <Card sx={{ mt: "1rem" }}>
           <CardContent>
             <Typography variant="h6" gutterBottom>
               Arabic [Main Study - Daily Classes] :

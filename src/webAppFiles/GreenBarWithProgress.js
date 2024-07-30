@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Drawer,
@@ -7,6 +7,7 @@ import {
   ListItemIcon,
   ListItemText,
   Fab,
+  LinearProgress,
 } from "@mui/material";
 import {
   Home,
@@ -24,8 +25,9 @@ import {
 } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
-const GreenBar = ({ children }) => {
+const GreenBarWithProgress = ({ children }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [progress, setProgress] = useState(0);
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -36,6 +38,20 @@ const GreenBar = ({ children }) => {
     }
     setDrawerOpen(open);
   };
+
+  const handleScroll = () => {
+    const scrollTop = document.documentElement.scrollTop;
+    const scrollHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    const scrollProgress = (scrollTop / scrollHeight) * 100;
+    setProgress(scrollProgress);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navigationItems = [
     { label: "Home", icon: <Home />, path: "/" },
@@ -116,20 +132,31 @@ const GreenBar = ({ children }) => {
     <>
       <Box
         sx={{
-          pt: "1rem",
-          pl: "1rem",
-          bgcolor: "#57C12C",
-          color: "white",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
           position: "fixed",
           top: 0,
+          left: 0,
           width: "100%",
         }}
       >
-        <Box>{children}</Box>
+        <LinearProgress
+          color="success"
+          variant="determinate"
+          value={progress}
+        />
+        <Box
+          sx={{
+            p: "1rem",
+            bgcolor: "#57C12C",
+            color: "white",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
+          <Box>{children}</Box>
+        </Box>
       </Box>
+      <Box sx={{ mt: "4rem" }}></Box>
       <Fab
         color="primary"
         aria-label="menu"
@@ -151,4 +178,4 @@ const GreenBar = ({ children }) => {
   );
 };
 
-export default GreenBar;
+export default GreenBarWithProgress;

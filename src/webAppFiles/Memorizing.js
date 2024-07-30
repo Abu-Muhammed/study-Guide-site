@@ -14,7 +14,7 @@ const Memorizing = () => {
         </Typography>
       </GreenBar>
       <Container>
-        <Card sx={{ marginBottom: "2rem" }}>
+        <Card sx={{ mt: "1rem" }}>
           <CardContent>
             <Typography variant="h6" gutterBottom>
               Shaikh Ibn Uthaimeen said:

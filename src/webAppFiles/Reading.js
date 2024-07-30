@@ -40,7 +40,7 @@ const Reading = () => {
         </Typography>
       </GreenBar>
       <Container>
-        <Card sx={{ marginBottom: "1rem" }}>
+        <Card sx={{ mt: "1rem" }}>
           <CardContent
             sx={{ display: "flex", flexDirection: "column", rowGap: "1rem" }}
           >

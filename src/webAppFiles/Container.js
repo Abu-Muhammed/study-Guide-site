@@ -6,7 +6,7 @@ const Container = ({ children }) => {
     <Box
       sx={{
         padding: "2rem",
-        margin: "0.5rem",
+        mt: "3rem",
         backgroundColor: "#f5f5f5",
         borderRadius: "8px",
       }}

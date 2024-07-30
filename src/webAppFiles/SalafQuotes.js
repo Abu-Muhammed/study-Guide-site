@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import GreenBar from "./GreenBar";
+import GreenBarWithProgress from "./GreenBarWithProgress";
 
 const quotes = [
   {
@@ -401,12 +401,12 @@ const quotes = [
 const SalafQuotes = () => {
   return (
     <>
-      <GreenBar>
+      <GreenBarWithProgress>
         <Typography variant="h5" align="center" gutterBottom>
           Narrations
         </Typography>
-      </GreenBar>
-      <Box sx={{ padding: "2rem" }}>
+      </GreenBarWithProgress>
+      <Box sx={{ p: "1rem", mt: "1rem" }}>
         {quotes.map((quote, index) => (
           <Box key={index} sx={{ my: "2rem" }}>
             <Typography variant="body1" sx={{ marginBottom: "1rem" }}>
