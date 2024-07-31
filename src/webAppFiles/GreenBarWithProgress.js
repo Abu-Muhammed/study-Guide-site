@@ -145,12 +145,14 @@ const GreenBarWithProgress = ({ children }) => {
         />
         <Box
           sx={{
-            p: "1rem",
+            pt: "1rem",
+            pl: "1rem",
             bgcolor: "#57C12C",
             color: "white",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
+            width: "100%",
           }}
         >
           <Box>{children}</Box>

@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, IconButton, Tooltip, Typography } from "@mui/material";
 import GreenBarWithProgress from "./GreenBarWithProgress";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
 const quotes = [
   {
@@ -399,6 +400,10 @@ const quotes = [
 ];
 
 const SalafQuotes = () => {
+  const handleCopy = (quote) => {
+    const fullQuote = `● ${quote.narrator} :\n${quote.text}\n\n${quote.reference}`;
+    navigator.clipboard.writeText(fullQuote).then();
+  };
   return (
     <>
       <GreenBarWithProgress>
@@ -406,7 +411,7 @@ const SalafQuotes = () => {
           Narrations
         </Typography>
       </GreenBarWithProgress>
-      <Box sx={{ px: "2rem", py: "1rem", mt: "1rem" }}>
+      <Box sx={{ px: "2rem", py: "0.1rem", mt: "1rem" }}>
         {quotes.map((quote, index) => (
           <Box key={index} sx={{ my: "2rem" }}>
             <Typography variant="body1" sx={{ marginBottom: "1rem" }}>
@@ -421,6 +426,11 @@ const SalafQuotes = () => {
             <Typography variant="caption" sx={{ color: "gray" }}>
               {quote.reference}
             </Typography>
+            <Tooltip title="Copy quote">
+              <IconButton onClick={() => handleCopy(quote)} sx={{ p: 0.5 }}>
+                <ContentCopyIcon sx={{ fontSize: "1rem" }} />
+              </IconButton>
+            </Tooltip>
           </Box>
         ))}
       </Box>

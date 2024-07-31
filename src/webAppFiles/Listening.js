@@ -17,7 +17,7 @@ const Listening = () => {
         <Card sx={{ mt: "1rem" }}>
           <CardContent>
             <Typography variant="h6" gutterBottom>
-              Arabic [Main Study - Daily Classes] :
+              Arabic [Main Study - Daily Classes]
             </Typography>
             <Grid container spacing={2}>
               <Grid item>
