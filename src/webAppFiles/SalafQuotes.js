@@ -428,7 +428,7 @@ const SalafQuotes = () => {
             </Typography>
             <Tooltip title="Copy quote">
               <IconButton onClick={() => handleCopy(quote)} sx={{ p: 0.5 }}>
-                <ContentCopyIcon sx={{ fontSize: "1rem" }} />
+                <ContentCopyIcon sx={{ fontSize: "1rem", zIndex: "-1" }} />
               </IconButton>
             </Tooltip>
           </Box>
