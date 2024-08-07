@@ -31,6 +31,10 @@ const Listening = () => {
                   text={" [pdf]"}
                   link={"https://t.me/c/1269314107/216997"}
                 />
+                <LinkUnderText
+                  text={" [key]"}
+                  link={"https://t.me/TheEnglishDiwan/7113"}
+                />
               </Grid>
               <Grid item>
                 <LinkUnderText
@@ -43,6 +47,10 @@ const Listening = () => {
                   text={" [pdf]"}
                   link={"https://t.me/c/1269314107/216997"}
                 />
+                <LinkUnderText
+                  text={" [key]"}
+                  link={"https://t.me/TheEnglishDiwan/7121"}
+                />
               </Grid>
               <Grid item>
                 <LinkUnderText
@@ -54,6 +62,10 @@ const Listening = () => {
                 <LinkUnderText
                   text={" [pdf]"}
                   link={"https://t.me/c/1269314107/212169"}
+                />
+                <LinkUnderText
+                  text={" [key]"}
+                  link={"https://t.me/TheEnglishDiwan/7129"}
                 />
               </Grid>
               <Grid item>

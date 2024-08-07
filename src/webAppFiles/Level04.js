@@ -130,6 +130,19 @@ const Level04 = () => {
             },
           ],
         },
+        {
+          title: "Patience & Gratitude",
+          books: [
+            {
+              name: "A Principle Concerning Patience & Gratitude by Ibn Taymiyyah",
+              link: "https://t.me/TheEnglishDiwan/9493",
+            },
+            {
+              name: "Patience and Gratitude by Ibn al-Qayyim",
+              link: "https://t.me/TheEnglishDiwan/8719",
+            },
+          ],
+        },
       ],
     },
   };

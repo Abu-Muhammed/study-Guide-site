@@ -22,6 +22,10 @@ const Level03 = () => {
               link: "https://t.me/TheEnglishDiwan/7532",
             },
             {
+              name: "Explanation of a Summary of al-Aqeedatul-Hamawiyyah of Ibn Taymiyyah by Shaykh ‘Uthaymīn",
+              link: "https://t.me/TheEnglishDiwan/6620",
+            },
+            {
               name: "Logical Proofs for Onness & Perfection of Allah - Shaykh Abdur Rahman as Sa'di",
               link: "https://t.me/DarPDFs/2146",
             },

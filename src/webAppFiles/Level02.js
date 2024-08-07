@@ -18,6 +18,10 @@ const Level02 = () => {
               link: "https://t.me/TheEnglishDiwan/8995The",
             },
             {
+              name: "The Student of Knowledge and Books by Shaykh Saalih Aali Shaikh",
+              link: "https://t.me/TheEnglishDiwan/6100",
+            },
+            {
               name: "Daily Routine of a Student of knowledge",
               link: "https://t.me/DarPDFs/1882",
             },
